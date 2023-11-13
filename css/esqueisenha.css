@@ -66,7 +66,7 @@ body {
 }
 
 .senha input {
-  padding-right: 2.5rem; /* Adicione espaço à direita para o ícone */
+  padding-right: 2.5rem;
 }
 
 .senha .eye-icon {
@@ -156,8 +156,6 @@ body {
   flex-shrink: 0;
   margin: auto;
   margin-left: 7.9rem;
-  text-decoration: none;
-  color: inherit;
 }
 
 .subtexto a {

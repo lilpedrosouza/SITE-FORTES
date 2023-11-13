@@ -11,10 +11,12 @@
     <div class="container">
         <img src="/assets/logofortes.svg" alt="logoFortes">
     <form class="form">
-    <div class="email">
-      <input type="email" placeholder="Email" name="email" id="email"/>
-      <i class="bi bi-envelope"></i>
-    </div>
+      <div class="email">
+        <input type="email" placeholder="Email" name="email" id="email" />
+        <span class="envelope-icon">
+          <i class="bi bi-envelope"></i>
+        </span>
+      </div>
     <div class="senha">
       <input type="password" placeholder="Senha" name="password" id="senha"/>
     <span class="eye-icon" onclick="mostrarSenha()">
@@ -22,21 +24,13 @@
       <i class="bi bi-eye-slash"></i>
     </span>
   </div>
-      <button id="btnEntrar">Entrar</button>
+ <div id="login"><a id="btnAzul" href="" onclick="return validacao()">Entrar</a></div> 
       <div class="subtexto">
-        <p>Não possui cadastro?</p>
-        </p>Esqueci minha senha</p>
+        <a href="cadastro.html" style="text-decoration:none;"><p>Não possui cadastro?</p></a>
+        <a href="esquecisenha.html" style="text-decoration:none;"><p>Esqueci minha senha</p></a>
       </div>
     </div>
     </form>
-
-
-
-
-
-
-
-
 
 
     <script src="/js/script.js"></script>
