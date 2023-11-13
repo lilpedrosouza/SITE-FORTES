@@ -36,5 +36,21 @@ function confirmacao() {
         return false;
     }
   }
+
+  function mostrarSenha(senhaId) {
+    var senhaInput = document.getElementById(senhaId);
+    var eyeIconOpen = senhaInput.nextElementSibling.querySelector(".bi-eye");
+    var eyeIconClosed = senhaInput.nextElementSibling.querySelector(".bi-eye-slash");
+
+    if (senhaInput.type === "password") {
+        senhaInput.type = "text";
+        eyeIconOpen.style.display = "inline";
+        eyeIconClosed.style.display = "none";
+    } else {
+        senhaInput.type = "password";
+        eyeIconOpen.style.display = "none";
+        eyeIconClosed.style.display = "inline";
+    }
+}
   
   
