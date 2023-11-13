@@ -11,12 +11,22 @@
   --sec-font: "Poppins", sans-serif;
 }
 
+.menu i{
+  width: 2rem;
+  height: 3rem;
+}
+
+
 body {
   background-color: #b3d8ef;
 }
 
 .descri {
-  margin-top: 15rem;
+  margin-top: 8rem;
+}
+
+p {
+  font-family: var(--main-font);
 }
 
 .btnMais {
@@ -34,7 +44,6 @@ body {
   justify-content: center;
 }
 
-
 .descBox {
   background-color: white;
   display: flex;
@@ -46,19 +55,26 @@ body {
   margin: auto;
   border: 3px solid #065485;
   margin-bottom: 1em;
+  border-radius: 8px;
 }
 
 .descBox .fodase {
-    font-family: var(--main-font);
-    margin: auto;
-    margin-left: 30%;
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    color: black;
+  font-family: var(--main-font);
+  margin-left: 30%;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
 }
 
-
+.descBox .obra {
+  font-family: var(--main-font);
+  margin-left: 50%;
+  display: block;
+  justify-content: center;
+  color: black;
+  margin-top: -15%;
+}
 
 .descBox2 {
   background-color: white;
@@ -71,17 +87,30 @@ body {
   margin: auto;
   border: 3px solid #065485;
   margin-bottom: 1em;
+  border-radius: 8px;
 }
 
 .descBox2 .fodase2 {
-    margin-left: -15rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: black;
+  font-family: var(--main-font);
+  margin-left: 30%;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
 }
 
+.descBox2 {
+  margin-top: 50px;
+}
 
+.descBox2 .obra2 {
+  font-family: var(--main-font);
+  margin-left: 50%;
+  display: block;
+  justify-content: center;
+  color: black;
+  margin-top: -15%;
+}
 
 .descBox3 {
   background-color: white;
@@ -95,25 +124,84 @@ body {
   padding: auto;
   border: 3px solid #065485;
   margin-bottom: 1em;
+  border-radius: 8px;
+}
+
+.descBox3 {
+  margin-top: 50px;
 }
 
 .descBox3 .fodase3 {
-    margin-left: -15rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: black;
+  font-family: var(--main-font);
+  margin-left: 30%;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
 }
 
+.descBox3 .obra3 {
+  font-family: var(--main-font);
+  margin-left: 50%;
+  display: block;
+  justify-content: center;
+  color: black;
+  margin-top: -15%;
+}
+
+.button {
+  display: flex;
+  margin-left: 74.5rem;
+  margin-top: -4.3rem;
+}
+
+.button button {
+  background-color: #4de840;
+  text-align: center;
+  color: white;
+  font-family: var(--main-font);
+  width: 251px;
+  height: 51.55px;
+  font-size: 24px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: #4de840;
+}
+
+.buttonCancelar {
+  display: flex;
+  margin-left: 74.5rem;
+  margin-top: -4.3rem;
+}
+
+.buttonCancelar button {
+  background-color: #e84040;
+  text-align: center;
+  color: white;
+  font-family: var(--main-font);
+  width: 251px;
+  height: 51.55px;
+  font-size: 24px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: #e84040;
+}
+
+.button2 {
+  display: flex;
+  margin-left: 37rem;
+  margin-top: -2rem;
+}
 
 img {
   display: flex;
   height: 12.9375rem;
   width: 16rem;
   border-right: 3px solid #065485;
+  border-radius: 5.3px 0px 0px 5.3px;
 }
 
 .imagens {
-    position: absolute;
-    margin: auto;
+  position: absolute;
+  margin: auto;
 }
