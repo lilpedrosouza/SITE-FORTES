@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --main-color: #0a6aa6;
+  --Light-out: #065485;
+  --bright-color: #c0e7f0;
+  --verde-main: #50b6a3;
+  --verde-light: #62d9c3;
+  --verde-out: #50b6a3;
+  --main-font: "Roboto", sans-serif;
+  --sec-font: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(70, 118, 155);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 118, 155, 1) 0%,
+    rgba(27, 146, 97, 1) 47%,
+    rgba(91, 177, 185, 1) 86%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container h2 {
+  color: black;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40.4375rem;
+  max-width: 42.4375rem;
+  height: 42.625rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.container {
+  border-radius: 0.625rem;
+  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+
+.container img {
+  width: 25.35594rem;
+  height: 6.79069rem;
+  flex-shrink: 0;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  gap: 2.5rem;
+}
+
+.form input, .form .dropbox select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: #000000 1.25px solid;
+  color: #000;
+  opacity: 0.5;
+  mix-blend-mode: plus-darker;
+}
+
+.form input, .form .dropbox select {
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  line-height: normal;
+}
+
+
+.form .dropbox select{
+  width: 108%;
+  height: 98%;
+}
+
+.senha {
+  position: relative;
+}
+
+.senha .eye-icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 55%;
+  right: -0.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.senha i.bi-eye-slash {
+  display: none;
+}
+
+/* Adicione a seguinte regra para esconder o ícone do olho aberto quando a senha estiver visível */
+.senha.mostrar i.bi-eye {
+  display: none;
+}
+
+.senha.mostrar i.bi-eye-slash {
+  display: inline;
+}
+
+.confirmarSenha {
+  position: relative;
+}
+
+
+.confirmarSenha .eye-icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 55%;
+  right: -0.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.confirmarSenha i.bi-eye-slash {
+  display: none;
+}
+
+/* Adicione a seguinte regra para esconder o ícone do olho aberto quando a senha estiver visível */
+.confirmarSenha.mostrar i.bi-eye {
+  display: none;
+}
+
+.confirmarSenha.mostrar i.bi-eye-slash {
+  display: inline;
+}
+
+#btnAzul {
+  margin-top: 5%;
+  width: 15.6875rem;
+  height: 4.5rem;
+  height: 3.3rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+#btnAzul {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#btnAzul {
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  border: 3px solid rgba(86, 109, 98, 0.42);
+}
+
+.campo-obrigatorio, .senha-diferente{
+  font-family: Roboto;
+  font-size: .75rem;
+  color: red;
+  display: none;
+}
+
+.subtexto {
+  font-family: var(--main-font);
+}

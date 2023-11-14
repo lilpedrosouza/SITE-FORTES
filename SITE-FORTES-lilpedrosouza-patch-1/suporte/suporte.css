@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --main-color: #0a6aa6;
+  --Light-out: #065485;
+  --bright-color: #c0e7f0;
+  --verde-main: #50b6a3;
+  --verde-light: #62d9c3;
+  --verde-out: #50b6a3;
+  --main-font: "Roboto", sans-serif;
+  --sec-font: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(70, 118, 155);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 118, 155, 1) 0%,
+    rgba(27, 146, 97, 1) 47%,
+    rgba(91, 177, 185, 1) 86%
+  );
+}
+
+.container {
+  display: flex;
+  width: 31.625rem;
+  height: 47rem;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.container {
+  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 0.625rem;
+}
+
+.container img {
+  width: 21.55569rem;
+  height: 5.79388rem;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.container h1{
+    margin-bottom: 30px;
+    font-family: var(--main-font);
+}
+
+.form input, textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 3.125rem;
+  width: 23rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: #000000 1.25px solid;
+}
+
+.form .nome{
+    margin-bottom: 5rem;
+}
+
+.form .email{
+    margin-top: -3rem;
+}
+
+.problema textarea{
+    margin-top: -1rem;
+    height: 170px;
+    resize: none;
+}
+
+.form input[placeholder], textarea {
+  font-family: var(--main-font);
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+  mix-blend-mode: plus-darker;
+  text-align: justify;
+}
+
+#btnAzul {
+  background-color: var(--main-color);
+  color: white;
+  margin-bottom: 1.25rem;
+  width: 13.6875rem;
+  height: 3.3rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  border: 3px solid rgba(86, 109, 98, 0.42);
+  cursor: pointer;
+}
+
+#btnAzul {
+  font-family: var(--main-font);
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#btnAzul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.subtexto p {
+  color: black;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+}
+
+.subtexto a {
+  text-decoration: none;
+}
+
