@@ -84,6 +84,58 @@ body {
   height: 98%;
 }
 
+.senha {
+  position: relative;
+}
+
+.senha .eye-icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 55%;
+  right: -0.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.senha i.bi-eye-slash {
+  display: none;
+}
+
+/* Adicione a seguinte regra para esconder o ícone do olho aberto quando a senha estiver visível */
+.senha.mostrar i.bi-eye {
+  display: none;
+}
+
+.senha.mostrar i.bi-eye-slash {
+  display: inline;
+}
+
+.confirmarSenha {
+  position: relative;
+}
+
+
+.confirmarSenha .eye-icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 55%;
+  right: -0.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.confirmarSenha i.bi-eye-slash {
+  display: none;
+}
+
+/* Adicione a seguinte regra para esconder o ícone do olho aberto quando a senha estiver visível */
+.confirmarSenha.mostrar i.bi-eye {
+  display: none;
+}
+
+.confirmarSenha.mostrar i.bi-eye-slash {
+  display: inline;
+}
 
 #btnAzul {
   margin-top: 5%;
