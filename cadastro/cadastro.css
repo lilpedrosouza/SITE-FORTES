@@ -36,14 +36,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   width: 40.4375rem;
   max-width: 42.4375rem;
   height: 42.625rem;
-  border-radius: 0.625rem;
-  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
   margin: auto;
   padding: 2rem;
+}
+
+.container {
+  border-radius: 0.625rem;
+  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
 }
 
 .container img {
@@ -67,17 +70,20 @@ body {
   padding: 0.5rem;
   border-radius: 8px;
   border: #000000 1.25px solid;
-  font-family: var(--main-font);
   color: #000;
-  font-family: Roboto;
+  opacity: 0.5;
+  mix-blend-mode: plus-darker;
+}
+
+.form input, .form .dropbox select {
+  font-family: var(--main-font);
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  opacity: 0.5;
-  mix-blend-mode: plus-darker;
   text-align: justify;
+  line-height: normal;
 }
+
 
 .form .dropbox select{
   width: 108%;
@@ -141,18 +147,24 @@ body {
   margin-top: 5%;
   width: 15.6875rem;
   height: 4.5rem;
-  background-color: var(--main-color);
-  color: white;
+  height: 3.3rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+#btnAzul {
   font-family: var(--main-font);
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  height: 3.3rem;
-  flex-shrink: 0;
+}
+
+#btnAzul {
+  color: white;
+  background-color: var(--main-color);
   border-radius: 1rem;
   border: 3px solid rgba(86, 109, 98, 0.42);
-  cursor: pointer;
 }
 
 .campo-obrigatorio, .senha-diferente{
@@ -160,4 +172,8 @@ body {
   font-size: .75rem;
   color: red;
   display: none;
+}
+
+.subtexto {
+  font-family: var(--main-font);
 }

@@ -16,12 +16,12 @@ function mostrarSenha(senhaId) {
 
   if (senhaInput.type === "password") {
       senhaInput.type = "text";
-      eyeIconOpen.style.display = "inline";
-      eyeIconClosed.style.display = "none";
-  } else {
-      senhaInput.type = "password";
       eyeIconOpen.style.display = "none";
       eyeIconClosed.style.display = "inline";
+  } else {
+      senhaInput.type = "password";
+      eyeIconOpen.style.display = "inline";
+      eyeIconClosed.style.display = "none";
   }
 }
 

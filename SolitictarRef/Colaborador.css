@@ -5,6 +5,9 @@
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 :root {
   --main-color: #0a6aa6;
@@ -12,13 +15,12 @@
   --bright-color: #c0e7f0;
   --verde-main: #50b6a3;
   --verde-light: #62d9c3;
-  --verde-out: #50b6a3;
+  --verde-out: #387f72;
   --main-font: "Roboto", sans-serif;
   --sec-font: "Poppins", sans-serif;
-  --gradient: linear-gradient(90deg, rgba(9,102,193,1) 0%, rgba(9,121,50,1) 51%, rgba(0,249,255,0.5914740896358543) 100%);
 }
 
-.descri {
+.visuPedidos {
   margin-top: 8rem;
 }
 
@@ -26,24 +28,8 @@ body {
   background-color: #b3d8ef;
 }
 
-
 p {
   font-family: var(--main-font);
-}
-
-.btnMais {
-  font-family: var(--sec-font);
-  color: white;
-  background-color: var(--Light-out);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 5px;
-  height: 2rem;
-  width: 7rem;
-  margin: auto;
-  border-color: var(--verde-out);
-  justify-content: center;
 }
 
 .descBox {
@@ -60,14 +46,13 @@ p {
   border-radius: 8px;
 }
 
-.descBox .fodase {
+.descBox .ref {
   font-family: var(--main-font);
   margin-left: 30%;
   display: block;
   flex-direction: row;
   justify-content: center;
   color: black;
-
 }
 
 .descBox .obra {
@@ -93,7 +78,7 @@ p {
   border-radius: 8px;
 }
 
-.descBox2 .fodase2 {
+.descBox2 .ref2 {
   font-family: var(--main-font);
   margin-left: 30%;
   display: block;
@@ -134,7 +119,7 @@ p {
   margin-top: 50px;
 }
 
-.descBox3 .fodase3 {
+.descBox3 .ref3 {
   font-family: var(--main-font);
   margin-left: 30%;
   display: block;
@@ -159,13 +144,18 @@ p {
 }
 
 .button button {
-  background-color: #4de840;
   text-align: center;
   color: white;
   font-family: var(--main-font);
   width: 251px;
   height: 51.55px;
   font-size: 24px;
+  cursor: pointer;
+}
+
+.button button {
+  color: white;
+  background-color: #4de840;
   border-radius: 8px;
   border-color: #4de840;
 }
@@ -177,18 +167,24 @@ p {
 }
 
 .buttonCancelar button {
-  background-color: #e84040;
   text-align: center;
-  color: white;
   font-family: var(--main-font);
   width: 251px;
   height: 51.55px;
   font-size: 24px;
+  cursor: pointer;
+}
+
+.buttonCancelar button {
+  color: white;
+  background-color: #e84040;
   border-radius: 8px;
   border-color: #e84040;
 }
 
-.img, .img2, .img3 {
+.img,
+.img2,
+.img3 {
   display: flex;
   height: 12.9375rem;
   width: 16rem;
@@ -222,30 +218,30 @@ p {
   font-weight: bold;
 }
 
-.joker {
+.navBar {
   display: flex;
   background-color: black;
   height: 2.5rem;
   justify-content: center;
 }
 
-.joker .navlink {
+.navBar .navlink {
   color: white;
   margin: auto;
   font-size: larger;
   font-family: var(--sec-font);
 }
 
-.joker a {
+.navBar a {
   text-decoration: none;
   transition: ease-in-out 0.3s;
 }
 
-.joker a:hover {
-  color: #4de840;
+.navBar a:hover {
+  color: var(--verde-out);
 }
 
-.joker i {
+.navBar i {
   font-size: 30px;
 }
 
@@ -257,4 +253,93 @@ p {
   margin-left: 1rem;
   border: 3px solid #1d6063;
   border-radius: 100%;
+}
+
+.pedir {
+  margin-top: 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem
+}
+
+.container .content {
+  margin-left: 4.5rem;
+  margin-bottom: 5rem;
+  width: 20.5rem;
+  height: 25.75rem;
+  background-color: white;
+  border: 3px solid #065485;
+  border-image: linear-gradient(to top, #6bc5d0, #279465) 1;
+}
+
+.container .content h2 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.container .content .palavrasComidas {
+  font-family: var(--main-font);
+  font-weight: 400;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.palavrasComidas p{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.palavrasComidas ul{
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.palavrasComidas li{
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.btnSolicitar {
+  color: white;
+  background-color: #038C8C;
+  border: 3px solid #065485;
+  border-image: linear-gradient(to top, #6bc5d0, #279465) 1;
+}
+
+.btnSolicitar {
+  width: 7rem;
+  height: 3rem;
+  margin-left: 40rem;
+  margin-top: -8rem ;
+  margin-bottom: 2rem;
+}
+
+.btnSolicitar {
+  font-family: var(--sec-font);
+  font-size: large;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b3d8ef;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--verde-out);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--verde-light);
 }

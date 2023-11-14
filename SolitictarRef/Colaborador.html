@@ -10,27 +10,27 @@
 </head>
 
 <body>
-    <nav class="joker">
-        <a class="navlink" href="">SOLICITAR REFEIÇÃO</a>
-        <a class="navlink" href="Colaborador.html">REFEIÇÕES SOLICITADAS</a>
+    <nav class="navBar">
+        <a class="navlink" href="#pedir">SOLICITAR REFEIÇÃO</a>
+        <a class="navlink" href="#visuPedidos">REFEIÇÕES SOLICITADAS</a>
         <a class="navlink" href="../suporte/suporte.html">SUPORTE</a>
         <a class="navlink" href="../login/login.html"><i class="bi bi-box-arrow-left"></i></a>
     </nav>
     <div class="fotoPerfil">
         <img src="../assets/fotor-2023111322129.png" alt="">
     </div>
-    <section class="descri">
+    <section id="visuPedidos" class="visuPedidos">
         <div class="calendario">
-            <i class="bi bi-calendar3"></i>
+         <i class="bi bi-calendar3"></i>
             <p class="date"></p>
         </div>
         <div class="descBox">
             <div class="imagens">
             <img class="img" src="../assets/cafedamanha.jpg" alt="">
             </div>
-            <div class="fodase">
+            <div class="ref">
                 <br>
-            <p>Refeição café da manhã (13/11/2023)</p>
+            <p class="cafe"></p>
             <br>
             <ul>Descrição
                 <li>dsdasd</li>
@@ -52,9 +52,9 @@
             <img class="img2" src="../assets/almocofortes.jpg" alt="">
             </div>
         
-                <div class="fodase2">
+                <div class="ref2">
                     <br>
-            <p>Refeição almoço</p>
+            <p class="almoco">Refeição almoço</p>
             <br>
             <ul>Descrição
                 <li>dsdasd</li>
@@ -76,9 +76,9 @@
             <div class="imagens">
                 <img class="img3" src="../assets/jantarfortes.jpg" alt="">
             </div>
-            <div class="fodase3">
+            <div class="ref3">
                 <br>
-            <p>Refeição jantar</p>
+            <p class="jantar">Refeição jantar</p>
             <br>
             <ul>Descrição
                 <li>dsdasd</li>
@@ -96,10 +96,106 @@
          <div class="buttonCancelar"><button>CANCELAR</button></div>
         </div>
 
->
     </section>
     
-    <script src="script.js"></script>
+    <section id="pedir" class="pedir">
+        
+        <div class="container">
+            <div class="content">
+                <h2 class="tituloComidas">Cafe da Manha</h2>
+                <div class="palavrasComidas">
+                    <p class="cafe"></p>
+                    <br>
+                    <ul>Descrição:
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                    </ul>
+                    <br>
+                    <p>Preço R$17,00</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox1" name="opcao" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Marmita</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox2" name="opcao" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Self-service</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox3" name="opcao" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Nenhum</label>
+                      </div>
+                    <br>
+                </div>
+            </div>
+            <div class="content">
+                <h2 class="tituloComidas">Almoço</h2>
+                <div class="palavrasComidas">
+                    <p class="almoco"></p>
+                    <br>
+                    <ul>Descrição:
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                    </ul>
+                    <br>
+                    <p>Preço R$17,00</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox11" name="opcao1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox11">Marmita</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox21" name="opcao1" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox21">Self-service</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox31" name="opcao1" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox31">Nenhum</label>
+                      </div>
+                    <br>
+                </div>
+
+            </div>
+    
+            <div class="content">
+                <h2 class="tituloComidas">Jantar</h2>
+                <div class="palavrasComidas">
+                    <p class="jantar"></p>
+                    <br>
+                    <ul>Descrição:
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                        <li>dsdasd</li>
+                    </ul>
+                    <br>
+                    <p>Preço R$17,00</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox12" name="opcao2" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox12">Marmita</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox22" name="opcao2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox22">Self-service</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox32" name="opcao2" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox32">Nenhum</label>
+                      </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <button class="btnSolicitar">
+            Solicitar
+        </button>
+    </section>
+
+
+    <script src="../SolitictarRef/script.js"></script>
 </body>
 
 </html>

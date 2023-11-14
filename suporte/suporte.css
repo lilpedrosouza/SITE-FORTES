@@ -23,17 +23,20 @@ body {
 
 .container {
   display: flex;
-  background-color: white;
   width: 31.625rem;
-  height: 45rem;
+  height: 47rem;
   flex-shrink: 0;
-  border-radius: 0.625rem;
-  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   margin-top: 5rem;
+}
+
+.container {
+  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 0.625rem;
 }
 
 .container img {
@@ -92,28 +95,33 @@ body {
 }
 
 #btnAzul {
-  display: flex;
   background-color: var(--main-color);
   color: white;
-  font-family: var(--main-font);
-  font-family: Roboto;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   margin-bottom: 1.25rem;
   width: 13.6875rem;
   height: 3.3rem;
   flex-shrink: 0;
   border-radius: 1rem;
   border: 3px solid rgba(86, 109, 98, 0.42);
+  cursor: pointer;
+}
+
+#btnAzul {
+  font-family: var(--main-font);
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#btnAzul {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  cursor: pointer;
   margin: auto;
-  margin-top: -1rem;
-  text-decoration: none;
 }
 
 .subtexto p {
