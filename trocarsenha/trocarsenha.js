@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const id = document.getElementById('senha');
+    const id = document.getElementById('id');
 
     id.addEventListener("input", () => {
         const idValue = id.value;
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function confirmacao() {
-    var senha1 = document.getElementById("senha1").value;
+    var senha1 = document.getElementById("senha").value;
     var senha2 = document.getElementById("senha2").value;
 
     if (senha1 == "" || senha2 == "") {
@@ -36,5 +36,18 @@ function confirmacao() {
         return false;
     }
   }
+  function mostrarSenha(senhaId) {
+    var senhaInput = document.getElementById(senhaId);
+    var eyeIconOpen = senhaInput.nextElementSibling.querySelector(".bi-eye");
+    var eyeIconClosed = senhaInput.nextElementSibling.querySelector(".bi-eye-slash");
   
-  
+    if (senhaInput.type === "password") {
+        senhaInput.type = "text";
+        eyeIconOpen.style.display = "none";
+        eyeIconClosed.style.display = "inline";
+    } else {
+        senhaInput.type = "password";
+        eyeIconOpen.style.display = "inline";
+        eyeIconClosed.style.display = "none";
+    }
+  }

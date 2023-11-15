@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+
+:root {
+    --main-color: #0a6aa6;
+    --Light-out: #065485;
+    --bright-color: #c0e7f0;
+    --verde-main: #50b6a3;
+    --verde-light: #62d9c3;
+    --verde-out: #387f72;
+    --main-font: "Roboto", sans-serif;
+    --sec-font: "Poppins", sans-serif;
+  }
+
+body {
+    background-color: #c8fff4 ;
+}
+
+.navBar {
+    display: flex;
+    background-color:#065485;;
+    height: 2.7rem;
+    justify-content: center;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .navBar .navlink {
+    color: #ffffff;
+    margin: auto;
+    font-size: larger;
+    font-family: var(--sec-font);
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .navBar a:hover {
+    color: var(--verde-light);
+  }
+  
+  .navBar i {
+    font-size: 30px;
+  }
+
+hr {
+    border-color: black;
+}
+
+  
+.caixaAdm {
+    display: flex;
+    background-color: var(--Light-out);
+    width: 80rem;
+    height: 53rem;
+    margin: auto;
+    margin-top: 7.5rem;
+    display: grid;
+    grid-template-columns: (1, 1fr) ;
+    border-radius: 7px;
+}
+
+.caixaAdm {
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 7px;
+    border-color: rgb(209, 209, 209);
+}
+
+.relatorio, .relatorio2, .relatorio3, .relatorio4 {
+    background-color: #cfcfcf;
+    width: 65rem ;
+    height: 10.5rem ;
+    margin: auto;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 4px solid #065485;
+    border-image: linear-gradient(to top, #6bc5d0, #279465) 1;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, green, gold);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.setor1 {
+    margin-left: 5rem;
+}
+
+.setor3 {
+    margin-left: -2rem;
+}
+
+.setor1, .setor2 {
+    margin-top: 1.7rem;
+}
+
+
+small {
+    color: #0864D2;
+    margin-left: 7.5rem;
+    cursor: pointer;
+    font-family: var(--sec-font);
+    font-size: small;
+}
+
+p {
+    font-family: var(--main-font);
+}
