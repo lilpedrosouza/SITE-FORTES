@@ -26,12 +26,14 @@ function validacao() {
   }
 
   if (email === "cliente@fortes.com.br" && senha === "123456") {
-    window.location.href = "esquecisenha.html";
+    window.location.href = "../SolitictarRef/Colaborador.html";
     return false;
-  } else {
-    alert("Usuário ou senha incorretos!");
-    logar.disabled = true;
+  } else if (email === "administrador@fortes.com.br" && senha === "123456"){
+    window.location.href = "../paginaadministrador/adm.html";
     return false;
+  } else{
+    alert("Senha ou usuários incorretos!")
+    event.preventDefault();
   }
 }
 

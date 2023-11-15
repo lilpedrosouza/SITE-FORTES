@@ -9,6 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function mostrarSenha(senhaId) {
+  var senhaInput = document.getElementById(senhaId);
+  var eyeIconOpen = senhaInput.nextElementSibling.querySelector(".bi-eye");
+  var eyeIconClosed = senhaInput.nextElementSibling.querySelector(".bi-eye-slash");
+
+  if (senhaInput.type === "password") {
+      senhaInput.type = "text";
+      eyeIconOpen.style.display = "none";
+      eyeIconClosed.style.display = "inline";
+  } else {
+      senhaInput.type = "password";
+      eyeIconOpen.style.display = "inline";
+      eyeIconClosed.style.display = "none";
+  }
+}
+
+
 document.getElementById("cpf").addEventListener("input", function (event) {
   let inputValue = event.target.value.replace(/\D/g, ""); // Remove caracteres não numéricos
   if (inputValue.length > 3) {

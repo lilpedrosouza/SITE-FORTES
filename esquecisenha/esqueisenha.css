@@ -21,29 +21,6 @@ body {
   );
 }
 
-.container {
-  display: flex;
-  background-color: white;
-  width: 31.625rem;
-  height: 40rem;
-  flex-shrink: 0;
-  border-radius: 0.625rem;
-  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 5rem;
-}
-
-.container img {
-  width: 21.55569rem;
-  height: 5.79388rem;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  margin-bottom: 3rem;
-  display: flex;
-}
 
 .email {
   position: relative;
@@ -75,20 +52,6 @@ body {
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.senha i.bi-eye-slash {
-  display: none;
-}
-
-/* Adicione a seguinte regra para esconder o ícone do olho aberto quando a senha estiver visível */
-.senha.mostrar i.bi-eye {
-  display: none;
-}
-
-.senha.mostrar i.bi-eye-slash {
-  display: inline;
 }
 
 .form input {
@@ -101,67 +64,58 @@ body {
   margin-bottom: 3.125rem;
   width: 23rem;
   height: 3rem;
+}
+
+.form input {
   flex-shrink: 0;
   border-radius: 8px;
   border: #000000 1.25px solid;
 }
 
 .form input[placeholder] {
-  font-family: var(--main-font);
   color: #000;
-  font-family: Roboto;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   opacity: 0.5;
   mix-blend-mode: plus-darker;
   text-align: justify;
 }
 
+.form input[placeholder] {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
 #btnAzul {
-  display: flex;
   background-color: var(--main-color);
   color: white;
-  font-family: var(--main-font);
-  font-family: Roboto;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   margin-bottom: 1.25rem;
   width: 13.6875rem;
   height: 3.3rem;
   flex-shrink: 0;
   border-radius: 1rem;
   border: 3px solid rgba(86, 109, 98, 0.42);
+  cursor: pointer;
+}
+
+#btnAzul {
+  font-family: var(--main-font);
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#btnAzul {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  cursor: pointer;
   margin: auto;
-  text-decoration: none;
 }
-
-.subtexto {
-  color: var(--main-color);
-  font-family: Roboto;
-  font-size: 0.8375rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: underline;
-  width: 9.375rem;
-  height: 1.25rem;
-  flex-shrink: 0;
-  margin: auto;
-  margin-left: 7.9rem;
-}
-
-.subtexto a {
-  text-decoration: none;
-}
-
 
 .voltar {
   display: flex;
@@ -183,20 +137,22 @@ body {
   text-decoration: none;
 }
 
-
 .container-senha {
   display: flex;
-  background-color: white;
   width: 31.625rem;
   height: 40rem;
   flex-shrink: 0;
-  border-radius: 0.625rem;
-  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   margin-top: 5rem;
+}
+
+.container-senha {
+  border-radius: 0.625rem;
+  box-shadow: 9px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
 }
 
 .container-senha img {

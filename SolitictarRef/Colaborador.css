@@ -1,47 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #0a6aa6;
   --Light-out: #065485;
   --bright-color: #c0e7f0;
   --verde-main: #50b6a3;
   --verde-light: #62d9c3;
-  --verde-out: #50b6a3;
+  --verde-out: #387f72;
   --main-font: "Roboto", sans-serif;
   --sec-font: "Poppins", sans-serif;
 }
 
-.menu i{
-  width: 2rem;
-  height: 3rem;
+.visuPedidos {
+  margin-top: 8rem;
 }
-
 
 body {
   background-color: #b3d8ef;
 }
 
-.descri {
-  margin-top: 8rem;
-}
-
 p {
   font-family: var(--main-font);
-}
-
-.btnMais {
-  font-family: var(--sec-font);
-  color: white;
-  background-color: var(--Light-out);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 5px;
-  height: 2rem;
-  width: 7rem;
-  margin: auto;
-  border-color: var(--verde-out);
-  justify-content: center;
 }
 
 .descBox {
@@ -58,7 +46,7 @@ p {
   border-radius: 8px;
 }
 
-.descBox .fodase {
+.descBox .ref {
   font-family: var(--main-font);
   margin-left: 30%;
   display: block;
@@ -73,7 +61,7 @@ p {
   display: block;
   justify-content: center;
   color: black;
-  margin-top: -15%;
+  margin-top: -10%;
 }
 
 .descBox2 {
@@ -90,7 +78,7 @@ p {
   border-radius: 8px;
 }
 
-.descBox2 .fodase2 {
+.descBox2 .ref2 {
   font-family: var(--main-font);
   margin-left: 30%;
   display: block;
@@ -109,7 +97,7 @@ p {
   display: block;
   justify-content: center;
   color: black;
-  margin-top: -15%;
+  margin-top: -10%;
 }
 
 .descBox3 {
@@ -131,7 +119,7 @@ p {
   margin-top: 50px;
 }
 
-.descBox3 .fodase3 {
+.descBox3 .ref3 {
   font-family: var(--main-font);
   margin-left: 30%;
   display: block;
@@ -146,54 +134,57 @@ p {
   display: block;
   justify-content: center;
   color: black;
-  margin-top: -15%;
+  margin-top: -10%;
 }
 
 .button {
   display: flex;
-  margin-left: 74.5rem;
-  margin-top: -4.3rem;
+  margin-left: 44.5rem;
+  margin-top: 1.6rem;
 }
 
 .button button {
-  background-color: #4de840;
   text-align: center;
-  color: white;
   font-family: var(--main-font);
   width: 251px;
   height: 51.55px;
   font-size: 24px;
+  cursor: pointer;
+  
+}
+
+.button button {
+  color: white;
+  background-color: #4de840;
   border-radius: 8px;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-color: #4de840;
 }
 
 .buttonCancelar {
   display: flex;
-  margin-left: 74.5rem;
-  margin-top: -4.3rem;
+  margin-left: 44.5rem;
+  margin-top: 1.6rem;
 }
 
 .buttonCancelar button {
-  background-color: #e84040;
   text-align: center;
-  color: white;
   font-family: var(--main-font);
   width: 251px;
   height: 51.55px;
   font-size: 24px;
+  cursor: pointer;
+}
+
+.buttonCancelar button {
+  color: white;
+  background-color: #e84040;
   border-radius: 8px;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-color: #e84040;
 }
 
-.button2 {
-  display: flex;
-  margin-left: 37rem;
-  margin-top: -2rem;
-}
-
-img {
+.img,
+.img2,
+.img3 {
   display: flex;
   height: 12.9375rem;
   width: 16rem;
@@ -205,3 +196,165 @@ img {
   position: absolute;
   margin: auto;
 }
+
+.calendario {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: end;
+  margin: auto;
+  margin-right: 10rem;
+  margin-top: -12rem;
+  margin-bottom: 2.5rem;
+}
+
+.calendario i {
+  font-size: 3rem;
+}
+
+.calendario p {
+  font-family: var(--sec-font);
+  margin-top: 0.8rem;
+  margin-right: -8.5rem;
+  font-weight: bold;
+}
+
+.navBar {
+  display: flex;
+  background-color:#065485;;
+  height: 2.5rem;
+  justify-content: center;
+}
+
+.navBar .navlink {
+  color: #ffffff;
+  margin: auto;
+  font-size: larger;
+  font-family: var(--sec-font);
+}
+
+.navBar a {
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.navBar a:hover {
+  color: var(--verde-light);
+}
+
+.navBar i {
+  font-size: 30px;
+}
+
+.fotoPerfil img {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  border: 3px solid #1d6063;
+  border-radius: 100%;
+}
+
+.pedir {
+  margin-top: 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-left: -1rem;
+}
+
+.container .content {
+  margin-left: 4.5rem;
+  margin-bottom: 5rem;
+  width: 20.5rem;
+  height: 25.75rem;
+  background-color: white;
+  border: 3px solid #065485;
+  border-image: linear-gradient(to top, #6bc5d0, #279465) 1;
+}
+
+.container .content h2 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.container .content .palavrasComidas {
+  font-family: var(--main-font);
+  font-weight: 400;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.palavrasComidas p{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.palavrasComidas ul{
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.palavrasComidas li{
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.box-btnSolicitar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.botao-gradient {
+	background: linear-gradient(#065485, #065485) padding-box, 
+  linear-gradient(to top, #6bc5d0, #279465) border-box;
+	border-radius: 50em;
+	border: 3px solid transparent;
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 0.5em 1.5em;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b3d8ef;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--verde-out);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--verde-light);
+}
+
+.cBox1, .cBox2, .cBox3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+} 
