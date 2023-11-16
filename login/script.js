@@ -31,6 +31,9 @@ function validacao() {
   } else if (email === "administrador@fortes.com.br" && senha === "123456"){
     window.location.href = "../paginaadministrador/adm.html";
     return false;
+  } else if(email === "fornecedor@fortes.com.br" && senha === "123456"){
+    window.location.href = "../fornecedor/fornecedor.html";
+    return false;
   } else{
     alert("Senha ou usuários incorretos!")
     event.preventDefault();

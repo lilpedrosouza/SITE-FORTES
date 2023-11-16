@@ -139,3 +139,17 @@ body {
   text-decoration: none;
 }
 
+.problema {
+  position: relative;
+}
+
+#contador-caracteres.aviso {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0.5rem;
+  color: black; 
+  font-size: 1rem; 
+  font-family: var(--main-font);
+  font-weight: bold;
+}

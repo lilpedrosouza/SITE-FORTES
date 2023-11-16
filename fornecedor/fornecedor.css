@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --main-color: #0a6aa6;
+  --Light-out: #065485;
+  --bright-color: #c0e7f0;
+  --verde-main: #50b6a3;
+  --verde-light: #62d9c3;
+  --verde-out: #50b6a3;
+  --notification-background: #313e2c;
+  --notification-primary: #aaec8a;
+  --background: #FAF9FF;
+  --main-font: "Roboto", sans-serif;
+  --sec-font: "Poppins", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 50.3% 44.5%, rgb(116, 147, 179) 0%, rgb(62, 83, 104) 100.2%);
+}
+
+.navBar {
+    display: flex;
+    background-color:#065485;;
+    height: 3rem;
+    justify-content: center;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .navBar .navlink {
+    color: #ffffff;
+    margin: auto;
+    font-size: larger;
+    font-family: var(--sec-font);
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .navBar a:hover {
+    color: var(--verde-light);
+  }
+  
+  .navBar i {
+    font-size: 30px;
+  }
+
+  .fotoPerfil img {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    border: 3px solid #1d6063;
+    border-radius: 100%;
+  }
+
+section {
+    margin-top: 5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-left: -1rem;
+}
+
+.container .content {
+  margin-left: 4.5rem;
+  margin-bottom: 5rem;
+  width: 20.5rem;
+  height: 25.75rem;
+  background-color: white;
+  border: 3px solid #065485;
+  border-image: linear-gradient(to top, #6bc5d0, #279465) 1;
+}
+
+.container .content h2 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.container .content .totalAlim {
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+.container .content .totalAlim li {
+    margin-left: 2rem;
+}
+
+.container .content .totalAlim p {
+    margin-left: 2rem;
+}
+
+
+.notification{
+  position: absolute;
+  width: max-content;
+  left: 0; 
+  right: 0; 
+  bottom: 770px;
+  margin-left: auto; 
+  margin-right: auto; 
+  border-radius: 6px;
+  background-color: var(
+      --notification-background);
+  color: var(--notification-primary);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fade-in 3s linear;
+  display: none;
+}
+
+.notification__icon {
+  height: 26px;
+  width: 26px;
+  margin-right: 4px;
+}
+
+.notification__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 8px;
+}
+
+.notification__progress {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  width: calc(100% - 8px);
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(
+      to right, 
+      var(--notification-background),  
+      var(--notification-primary)
+  );
+  border-radius: inherit;
+  animation: progress 2.5s 0.3s linear;
+}
+
+@keyframes fade-in {
+  5% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+  }
+  95% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes progress {
+  to {
+      transform: scaleX(1);
+  }
+}
+
+.btnConfirmar {
+    margin-left: 5.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btnConfirmar .AAA {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+
+.btnConfirmar:hover {
+    background-color: var(--Light-out);
+}
+
+.calendario {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 70rem;
+    margin-top: 3rem;
+    margin-bottom: -5rem;
+  }
+  
+  .calendario i {
+    font-size: 3rem;
+  }
+  
+  .calendario p {
+    font-family: var(--sec-font);
+    margin-top: 0.8rem;
+    margin-right: -8.5rem;
+    font-weight: bold;
+  }  
